@@ -5,6 +5,6 @@ terraform {
     key            = "nestapp/terraform.tfstate"
     region         = "us-east-1"
     profile        = "terraform-user"
-    dynamodb_table = "terraform_state-lock"
+    dynamodb_table = "terraform-state-lock"
   }
 }
