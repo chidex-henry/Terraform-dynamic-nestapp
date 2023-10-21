@@ -86,6 +86,12 @@ variable "database_instance_class" {
     type        = bool
 }
 
+#application load balancer variable 
+variable "ssl_certificate_arn" {
+    description    = "ssl certificate arn"
+    type           = string
+}
+
 
 
 
