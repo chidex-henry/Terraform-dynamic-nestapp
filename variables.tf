@@ -60,6 +60,35 @@ variable "private_data_subnet_az2_cidr" {
     type           = string
 }
 
+# rds variables
+variable "multi_az_deployment" {
+    description = "create a standby db instance"
+    type        = bool
+}
+
+variable "database_instance_identifier" {
+    description    = "the database instance identifier"
+    type           = string
+}
+
+variable "database_password" {
+    description    = "the database password"
+    type           = string
+}
+
+variable "database_instance_class" {
+    description    = "the database instance type"
+    type           = string
+}
+
+ variable "publicly_accessible" {
+    description = "controls if instance is publicly accessible"
+    type        = bool
+}
+
+
+
+
 
 
 
