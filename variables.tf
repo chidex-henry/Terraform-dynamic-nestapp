@@ -93,6 +93,18 @@ variable "ssl_certificate_arn" {
 }
 
 
+# Route 53 variables 
+variable "domain_name" {
+    description    = "domain name"
+    type           = string
+}
+
+variable "record_name" {
+    description    = "sub domain name"
+    type           = string
+}
+
+
 
 
 
