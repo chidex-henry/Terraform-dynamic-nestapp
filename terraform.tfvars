@@ -25,3 +25,6 @@ environment = "dev"
  #record set in route 53
  domain_name = "chidiukaegbu.com"
  record_name = "www"
+
+ #sns topic variables
+ operator_email = "chidex.ukaegbu4real@gmail.com"
