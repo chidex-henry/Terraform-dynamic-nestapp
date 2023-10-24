@@ -14,7 +14,6 @@ variable "environment" {
   type        = string
 }
 
-
 #vpc variables 
 
 # for vpc cidr block 
@@ -109,6 +108,18 @@ variable "operator_email" {
     description    = "a valid email address"
     type           = string
 }
+
+#auto scaling group variables 
+variable "ec2_image_id" {
+    description    = "id of the ami"
+    type           = string
+}
+
+variable "ec2_instance_type" {
+    description    = "the ec2 instance type"
+    type           = string
+}
+
 
 
 

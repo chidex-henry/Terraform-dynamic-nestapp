@@ -28,3 +28,7 @@ environment = "dev"
 
  #sns topic variables
  operator_email = "chidex.ukaegbu4real@gmail.com"
+
+ #auto scaling group variables
+ ec2_image_id = "ami-0df435f331839b2d6"
+ ec2_instance_type   = "t2.micro"

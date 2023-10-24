@@ -26,3 +26,5 @@ resource "aws_db_instance" "database_instance" {
   skip_final_snapshot    = true
   publicly_accessible    = var.publicly_accessible
 }
+
+ 
