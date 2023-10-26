@@ -32,3 +32,6 @@ environment = "dev"
  #auto scaling group variables
  ec2_image_id = "ami-0df435f331839b2d6"
  ec2_instance_type   = "t2.micro"
+
+ #ec2 instance migrate
+ ec2_migrate_ami = "ami-0dbc3d7bc646e8516"

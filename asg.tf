@@ -14,7 +14,7 @@ resource "aws_launch_template" "app_server_launch_template" {
     enabled = true
   }
 
-  user_data = base64encode(templatefile("${path.module}/<enter the name of your script here>", {
+  user_data = base64encode(templatefile("${path.module}/install-and-configure-nest-app.sh.tpl", {
     PROJECT_NAME = var.project_name
     ENVIRONMENT  = var.environment
     RECORD_NAME  = var.record_name

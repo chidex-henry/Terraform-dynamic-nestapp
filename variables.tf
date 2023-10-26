@@ -120,6 +120,13 @@ variable "ec2_instance_type" {
     type           = string
 }
 
+#ec2 instance migrate 
+variable "ec2_migrate_ami" {
+    description    = "id of the ami ec2 migrate"
+    type           = string
+}
+
+
 
 
 

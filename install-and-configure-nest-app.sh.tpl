@@ -42,7 +42,7 @@ sudo sed -i '/<Directory "\/var\/www\/html">/,/<\/Directory>/ s/AllowOverride No
 #
 
 # This command downloads the contents of the specified S3 bucket to the '/var/www/html' directory on the EC2 instance
-sudo aws s3 sync s3://aosnote-nest-app-code /var/www/html
+sudo aws s3 sync s3://chidex-nest-app-web-files /var/www/html
 
 # This command changes the current working directory to '/var/www/html', which is the standard directory for hosting web pages on a Unix-based server
 cd /var/www/html
@@ -79,7 +79,7 @@ sudo sed -i "/^DB_USERNAME=/ s/=.*$/=${USERNAME}/" .env
 sudo sed -i "/^DB_PASSWORD=/ s/=.*$/=${PASSWORD}/" .env
 
 # This command will replace the AppServiceProvider.php file
-sudo aws s3 cp s3://aosnote-app-service-provider-files/nest-AppServiceProvider.php /var/www/html/app/Providers/AppServiceProvider.php
+sudo aws s3 cp s3://chidex-app-service-provider-files/nest-AppServiceProvider.php /var/www/html/app/Providers/AppServiceProvider.php
 
 # This command will restart the Apache server
 sudo service httpd restart
