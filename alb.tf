@@ -42,6 +42,8 @@ resource "aws_lb_listener" "alb_http_listener" {
     type = "redirect"
 
     redirect {
+      host        = "#{host}"
+      path        = "/#{path}"
       port        = 443
       protocol    = "HTTPS"
       status_code = "HTTP_301"
