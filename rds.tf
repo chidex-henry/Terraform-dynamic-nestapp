@@ -19,7 +19,7 @@ resource "aws_db_instance" "database_instance" {
   password               = var.database_password
   db_name                = "applicationdb"
   instance_class         = var.database_instance_class
-  allocated_storage      = 20
+  allocated_storage      = 200
   db_subnet_group_name   = aws_db_subnet_group.database_subnet_group.id
   vpc_security_group_ids = [aws_security_group.database_security_group.id]
   availability_zone      = data.aws_availability_zones.available_zones.names[1]

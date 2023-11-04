@@ -126,6 +126,12 @@ variable "ec2_migrate_ami" {
     type           = string
 }
 
+#iam role profile 
+variable "aws_iam_instance_profile_name" {
+    description    = "iam instance profile name"
+    type           = string
+}
+
 
 
 

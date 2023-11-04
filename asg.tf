@@ -6,9 +6,9 @@ resource "aws_launch_template" "app_server_launch_template" {
   description            ="${var.project_name}-${var.environment} launch template for asg"
   vpc_security_group_ids = [aws_security_group.app_server_security_group.id]
 
-#   iam_instance_profile {
-#     name = 
-#   }
+  iam_instance_profile {
+    name = aws_iam_instance_profile.s3_full_access_instance_profile.name
+  }
 
   monitoring {
     enabled = true

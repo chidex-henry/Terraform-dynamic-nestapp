@@ -35,3 +35,6 @@ environment = "dev"
 
  #ec2 instance migrate
  ec2_migrate_ami = "ami-0dbc3d7bc646e8516"
+
+ #iam instance profile 
+ aws_iam_instance_profile_name = "iam-instance-profile"
